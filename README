@@ -1,0 +1,27 @@
+README for wikipedia-tracker
+============================
+
+wikipedia-tracker is a set of tools to visualize your visited Wikipedia pages
+in a nice directed graph.
+
+How to use wikipedia-tracker
+============================
+
+- Run wp-tracker-proxy.rb on your local machine.
+
+- Configure your browser to use localhost:8080 as HTTP proxy.
+
+- Surf around on Wikipedia.
+
+- Reset your HTTP proxy configuration.
+
+- Use wpt-make-digraph.rb to postprocess the resulting .csv file(s) into .dot file(s).
+
+- Use graphviz to render .dot files to images.
+
+Requirements
+============
+
+- Ruby 1.8
+- Log4r Ruby module
+- graphviz if you want to visualize the results
